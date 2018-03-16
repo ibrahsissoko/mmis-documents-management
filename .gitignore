@@ -1,0 +1,11 @@
+node_modules/*
+typings/*
+npm-debug.log
+.settings/*
+.git/*
+bower_components/*
+app/*
+uploaded/*
+.DS_Store
+.env
+.vscode
