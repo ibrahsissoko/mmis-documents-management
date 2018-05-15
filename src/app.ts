@@ -1,8 +1,9 @@
 'use strict';
-require('dotenv').config();
+import * as path from 'path';
+let envPath = path.join(__dirname, '../../mmis-config');
+require('dotenv').config(({ path: envPath }));
 
 import * as express from 'express';
-import * as path from 'path';
 import * as favicon from 'serve-favicon';
 import * as logger from 'morgan';
 import * as cookieParser from 'cookie-parser';
@@ -10,7 +11,7 @@ import * as bodyParser from 'body-parser';
 import * as fse from 'fs-extra';
 import * as cors from 'cors';
 
-import Knex = require('knex');
+import * as Knex from 'knex';
 import { MySqlConnectionConfig } from 'knex';
 
 import { Jwt } from './models/jwt';
