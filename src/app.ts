@@ -78,7 +78,7 @@ let checkAuth = (req, res, next) => {
     });
 }
 
-app.use('/uploads', checkAuth, upload);
+app.use('/uploads', upload);
 app.use('/', index);
 
 //catch 404 and forward to error handler
