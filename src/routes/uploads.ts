@@ -16,7 +16,7 @@ import Knex = require('knex');
 import { UploadModel } from "../models/upload";
 
 const uploadModel = new UploadModel();
-const uploadDir = process.env.UPLOAD_DIR;
+const uploadDir = process.env.MMIS_DATA;
 
 fse.ensureDirSync(uploadDir);
 
