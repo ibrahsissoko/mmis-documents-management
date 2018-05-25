@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node app/bin/www.js"
+    "start": "node app/bin/www.js",
+    "build:watch": "npx tsc -w",
+    "build": "npx tsc"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
